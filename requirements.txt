@@ -1,1 +1,3 @@
 # requirements.txt
+python2-pip
+pymongo
