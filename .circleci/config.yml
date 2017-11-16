@@ -18,6 +18,12 @@ jobs:
     working_directory: ~/repo
 
     steps:
+      - run:
+          name: yum install
+          command: |
+            yum -y update \
+            && yum -y install git python2-pip python-virtualenv
+            
       - checkout
 
       # Download and cache dependencies
@@ -28,7 +34,7 @@ jobs:
           - v1-dependencies-
 
       - run:
-          name: install dependencies
+          name: setup python dependencies
           command: |
             virtualenv venv
             . venv/bin/activate
