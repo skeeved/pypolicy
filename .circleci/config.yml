@@ -23,7 +23,7 @@ jobs:
           command: |
             yum -y update \
             && yum -y install epel-release \
-            && yum -y install git python2-pip python-virtualenv
+            && yum -y install git gcc python-devel python2-pip python-virtualenv
             
       - checkout
 
