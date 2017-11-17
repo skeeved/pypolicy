@@ -1,0 +1,12 @@
+deployment:
+  staging:
+    branch: staging
+    codedeploy:
+      pypolicy:
+        deployment_group: pypolicy-staging
+  production:
+    branch: master
+    codedeploy:
+      pypolicy:
+        deployment_group: pypolicy-production
+        
