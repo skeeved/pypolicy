@@ -1,9 +1,8 @@
 pipeline {
-    agent { docker 'python:3.5.1' }
+    agent { dockerfile true }
     stages {
         stage('test') {
             steps {
-                sh 'sudo yum -y install python3-pytest'
                 sh 'pytest'
             }
         }

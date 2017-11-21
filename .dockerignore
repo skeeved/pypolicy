@@ -1,0 +1,9 @@
+tests/*
+src/*
+docs/*
+*.txt
+*.yml
+LICENSE
+README.md
+Jenkinsfile
+setup.*
