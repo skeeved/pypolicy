@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('test') {
             steps {
+                sh 'sudo yum -y install python3-pytest'
                 sh 'pytest'
             }
         }
