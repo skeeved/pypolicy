@@ -7,4 +7,11 @@ pipeline {
             }
         }
     }
+    post {
+    success {
+        slackSend channel: '#general',
+                  color: 'good',
+                  message: "The pipeline ${currentBuild.fullDisplayName} completed successfully."
+        }
+    }
 }
