@@ -9,4 +9,3 @@ deployment:
     codedeploy:
       pypolicy:
         deployment_group: pypolicy-production
-        
